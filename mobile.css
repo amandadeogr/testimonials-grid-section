@@ -1,0 +1,18 @@
+
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "one" "two" "four" "five" "three";
+    
+  
+    max-width: 90%;
+    width: 80%;
+    margin: 60px auto;
+  }
+
+  section {
+    height: fit-content;
+  }
+}

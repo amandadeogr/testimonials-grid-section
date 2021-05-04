@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "one one two three" "four five five three";
+  grid-gap: 20px 20px;
+  
+
+  max-width: 75%;
+  width: 70%;
+  margin: 60px auto;
+}
+
+/* Definicao das grid areas */
+
+.one {
+  grid-area: one;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.two {
+  grid-area: two;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+  background-color: hsl(219, 29%, 14%);
+}
+
+
+/* Configuracao geral das sections   */
+
+section {
+  color: hsl(0, 0%, 81%);
+  font-size: 1.3em;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #e9e9e9;
+  height: auto;
+}
+
+section h2 {
+  font-size: 1.4em;
+  color: hsl(210, 46%, 95%);
+}
+
+section.three, section.four, section.three h2, section.four h2  {
+  color: hsla(217, 19%, 35%, 0.787);
+  background-color: hsl(0, 0%, 100%);
+}
+
+section h2, .perfil {
+  margin-bottom: 20px;
+}
+
+.comments p {
+  opacity: 75%;
+}
+
+/* */
+
+/* perfil */
+.perfil {
+  display: flex;
+  
+}
+
+.image img {
+  border-radius: 100%;
+  border: 1px solid white;
+  width: 50%;
+  margin-top: 5px;
+}
+
+.description {
+  margin-left: -10px;
+}
+
+.description p {
+  font-size: .9em;
+  color: hsl(0, 0%, 81%);
+  opacity: 90%;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
